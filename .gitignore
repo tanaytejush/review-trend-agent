@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Environment Variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data and Output (exclude, but keep sample outputs)
+data/
+!data/.gitkeep
+output/*
+!output/README.md
+!output/trend_report_2024-07-30.csv
+!output/trend_report_2024-07-30.json
+!output/summary_2024-07-30.json
+!output/processor_state.json
+!output/sample_extractions.json
+
+# General JSON/CSV except specific ones
+*.csv
+!output/trend_report_2024-07-30.csv
+*.xlsx
+*.json
+!output/*.json
+!.env.example
+!requirements.txt
+!package.json
+!*config*.json
+
+# Logs
+*.log
+
+# Cache
+.cache/
+*.cache
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/

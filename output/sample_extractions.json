@@ -1,0 +1,552 @@
+[
+  {
+    "review_id": "sample_1",
+    "review_content": "Application freezes constantly, can't place orders",
+    "review_date": "2024-07-03T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "App crashes/freezing"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: App crashes/freezing"
+  },
+  {
+    "review_id": "sample_2",
+    "review_content": "The food quality was terrible, everything was stale",
+    "review_date": "2024-06-12T00:00:00",
+    "review_score": 5,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_3",
+    "review_content": "The food quality was terrible, everything was stale",
+    "review_date": "2024-07-02T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_4",
+    "review_content": "The food quality was terrible, everything was stale",
+    "review_date": "2024-07-07T00:00:00",
+    "review_score": 3,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_5",
+    "review_content": "Food came cold again, third time this week",
+    "review_date": "2024-07-05T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Food arrived cold"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food arrived cold"
+  },
+  {
+    "review_id": "sample_6",
+    "review_content": "Want faster delivery options back",
+    "review_date": "2024-07-17T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Payment issues"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Payment issues"
+  },
+  {
+    "review_id": "sample_7",
+    "review_content": "Promo codes never work",
+    "review_date": "2024-06-30T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Food portion reduced"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Food portion reduced"
+  },
+  {
+    "review_id": "sample_8",
+    "review_content": "Missing cutlery in the order",
+    "review_date": "2024-06-18T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Maps/navigation issues"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Maps/navigation issues"
+  },
+  {
+    "review_id": "sample_9",
+    "review_content": "Cold food delivery again",
+    "review_date": "2024-06-17T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Food arrived cold"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food arrived cold"
+  },
+  {
+    "review_id": "sample_10",
+    "review_content": "Restaurant quality has declined",
+    "review_date": "2024-07-01T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_11",
+    "review_content": "Restaurant sent wrong order",
+    "review_date": "2024-06-26T00:00:00",
+    "review_score": 5,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_12",
+    "review_content": "Delivery delay of 2 hours",
+    "review_date": "2024-07-24T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Delivery delay"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Delivery delay"
+  },
+  {
+    "review_id": "sample_13",
+    "review_content": "App interface is confusing",
+    "review_date": "2024-06-10T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Feature request - faster delivery"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Feature request - faster delivery"
+  },
+  {
+    "review_id": "sample_14",
+    "review_content": "The food quality was terrible, everything was stale",
+    "review_date": "2024-06-28T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_15",
+    "review_content": "Too many delivery charges",
+    "review_date": "2024-07-16T00:00:00",
+    "review_score": 3,
+    "topics": [
+      "Promo codes not working"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Promo codes not working"
+  },
+  {
+    "review_id": "sample_16",
+    "review_content": "Surge pricing is unfair",
+    "review_date": "2024-06-30T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Order missing items"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Order missing items"
+  },
+  {
+    "review_id": "sample_17",
+    "review_content": "Maps navigation is broken, driver got lost",
+    "review_date": "2024-07-10T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Food portion reduced"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food portion reduced"
+  },
+  {
+    "review_id": "sample_18",
+    "review_content": "App keeps crashing when I try to apply discount codes",
+    "review_date": "2024-07-21T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "App crashes/freezing"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: App crashes/freezing"
+  },
+  {
+    "review_id": "sample_19",
+    "review_content": "Great service, food arrived hot and fast",
+    "review_date": "2024-06-02T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Delivery partner rude"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Delivery partner rude"
+  },
+  {
+    "review_id": "sample_20",
+    "review_content": "Missing cutlery in the order",
+    "review_date": "2024-07-20T00:00:00",
+    "review_score": 3,
+    "topics": [
+      "Surge pricing complaints"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Surge pricing complaints"
+  },
+  {
+    "review_id": "sample_21",
+    "review_content": "Surge pricing is unfair",
+    "review_date": "2024-07-21T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Order missing items"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Order missing items"
+  },
+  {
+    "review_id": "sample_22",
+    "review_content": "Food arrived completely cold and packaging was damaged",
+    "review_date": "2024-06-12T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Food arrived cold"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food arrived cold"
+  },
+  {
+    "review_id": "sample_23",
+    "review_content": "Too many delivery charges",
+    "review_date": "2024-06-20T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Order missing items"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Order missing items"
+  },
+  {
+    "review_id": "sample_24",
+    "review_content": "App keeps crashing when I try to apply discount codes",
+    "review_date": "2024-06-11T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "App crashes/freezing"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: App crashes/freezing"
+  },
+  {
+    "review_id": "sample_25",
+    "review_content": "Surge pricing is unfair",
+    "review_date": "2024-07-23T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Delivery delay"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Delivery delay"
+  },
+  {
+    "review_id": "sample_26",
+    "review_content": "Too many delivery charges",
+    "review_date": "2024-06-23T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Restaurant quality declined"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Restaurant quality declined"
+  },
+  {
+    "review_id": "sample_27",
+    "review_content": "Customer service is unresponsive",
+    "review_date": "2024-07-30T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Delivery partner rude"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Delivery partner rude"
+  },
+  {
+    "review_id": "sample_28",
+    "review_content": "Delivery person behaved badly",
+    "review_date": "2024-06-04T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Delivery partner rude"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Delivery partner rude"
+  },
+  {
+    "review_id": "sample_29",
+    "review_content": "Restaurant quality has declined",
+    "review_date": "2024-07-20T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_30",
+    "review_content": "App technical issues persist",
+    "review_date": "2024-06-24T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Promo codes not working"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Promo codes not working"
+  },
+  {
+    "review_id": "sample_31",
+    "review_content": "Cold food delivery again",
+    "review_date": "2024-06-16T00:00:00",
+    "review_score": 3,
+    "topics": [
+      "Food arrived cold"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food arrived cold"
+  },
+  {
+    "review_id": "sample_32",
+    "review_content": "Food portion sizes have reduced",
+    "review_date": "2024-06-06T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Delivery delay"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Delivery delay"
+  },
+  {
+    "review_id": "sample_33",
+    "review_content": "App technical issues persist",
+    "review_date": "2024-06-24T00:00:00",
+    "review_score": 2,
+    "topics": [
+      "Delivery partner rude"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Delivery partner rude"
+  },
+  {
+    "review_id": "sample_34",
+    "review_content": "Restaurant sent wrong order",
+    "review_date": "2024-07-01T00:00:00",
+    "review_score": 3,
+    "topics": [
+      "Promo codes not working"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Promo codes not working"
+  },
+  {
+    "review_id": "sample_35",
+    "review_content": "Prices are too high now",
+    "review_date": "2024-06-28T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Food portion reduced"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Food portion reduced"
+  },
+  {
+    "review_id": "sample_36",
+    "review_content": "Surge pricing is unfair",
+    "review_date": "2024-06-17T00:00:00",
+    "review_score": 5,
+    "topics": [
+      "Delivery delay"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Delivery delay"
+  },
+  {
+    "review_id": "sample_37",
+    "review_content": "Restaurant quality has declined",
+    "review_date": "2024-07-18T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_38",
+    "review_content": "Too many delivery charges",
+    "review_date": "2024-07-22T00:00:00",
+    "review_score": 3,
+    "topics": [
+      "Promo codes not working"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Promo codes not working"
+  },
+  {
+    "review_id": "sample_39",
+    "review_content": "Please bring back the 10 minute delivery option",
+    "review_date": "2024-07-25T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Feature request - faster delivery"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Feature request - faster delivery"
+  },
+  {
+    "review_id": "sample_40",
+    "review_content": "Restaurant quality has declined",
+    "review_date": "2024-07-04T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Food quality poor/stale"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Food quality poor/stale"
+  },
+  {
+    "review_id": "sample_41",
+    "review_content": "Restaurant sent wrong order",
+    "review_date": "2024-06-03T00:00:00",
+    "review_score": 5,
+    "topics": [
+      "Order missing items"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Order missing items"
+  },
+  {
+    "review_id": "sample_42",
+    "review_content": "Too many delivery charges",
+    "review_date": "2024-07-26T00:00:00",
+    "review_score": 5,
+    "topics": [
+      "Payment issues"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Payment issues"
+  },
+  {
+    "review_id": "sample_43",
+    "review_content": "Customer service is unresponsive",
+    "review_date": "2024-07-09T00:00:00",
+    "review_score": 3,
+    "topics": [
+      "Food portion reduced"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Food portion reduced"
+  },
+  {
+    "review_id": "sample_44",
+    "review_content": "Excellent delivery partner, very polite",
+    "review_date": "2024-07-24T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "High delivery charges"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: High delivery charges"
+  },
+  {
+    "review_id": "sample_45",
+    "review_content": "Want faster delivery options back",
+    "review_date": "2024-07-15T00:00:00",
+    "review_score": 3,
+    "topics": [
+      "Restaurant quality declined"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Restaurant quality declined"
+  },
+  {
+    "review_id": "sample_46",
+    "review_content": "App keeps crashing when I try to apply discount codes",
+    "review_date": "2024-06-21T00:00:00",
+    "review_score": 5,
+    "topics": [
+      "App crashes/freezing"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: App crashes/freezing"
+  },
+  {
+    "review_id": "sample_47",
+    "review_content": "Food arrived completely cold and packaging was damaged",
+    "review_date": "2024-06-23T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Food arrived cold"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food arrived cold"
+  },
+  {
+    "review_id": "sample_48",
+    "review_content": "Want faster delivery options back",
+    "review_date": "2024-07-07T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "High delivery charges"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: High delivery charges"
+  },
+  {
+    "review_id": "sample_49",
+    "review_content": "Prices are too high now",
+    "review_date": "2024-06-03T00:00:00",
+    "review_score": 4,
+    "topics": [
+      "Customer service unresponsive"
+    ],
+    "sentiment": "neutral",
+    "reasoning": "Review mentions: Customer service unresponsive"
+  },
+  {
+    "review_id": "sample_50",
+    "review_content": "Food came cold again, third time this week",
+    "review_date": "2024-07-10T00:00:00",
+    "review_score": 1,
+    "topics": [
+      "Food arrived cold"
+    ],
+    "sentiment": "negative",
+    "reasoning": "Review mentions: Food arrived cold"
+  }
+]

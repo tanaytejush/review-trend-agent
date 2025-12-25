@@ -1,0 +1,65 @@
+{
+  "target_date": "2024-07-30",
+  "total_topics": 16,
+  "total_mentions": 20064,
+  "top_topics": [
+    {
+      "topic": "Feature request - faster delivery",
+      "total_mentions": 1827
+    },
+    {
+      "topic": "Delivery partner rude",
+      "total_mentions": 1527
+    },
+    {
+      "topic": "Food arrived cold",
+      "total_mentions": 1481
+    },
+    {
+      "topic": "Order missing items",
+      "total_mentions": 1252
+    },
+    {
+      "topic": "Delivery delay",
+      "total_mentions": 1238
+    },
+    {
+      "topic": "Restaurant quality declined",
+      "total_mentions": 1219
+    },
+    {
+      "topic": "Customer service unresponsive",
+      "total_mentions": 1215
+    },
+    {
+      "topic": "Maps/navigation issues",
+      "total_mentions": 1197
+    },
+    {
+      "topic": "Surge pricing complaints",
+      "total_mentions": 1192
+    },
+    {
+      "topic": "Food portion reduced",
+      "total_mentions": 1187
+    }
+  ],
+  "trending_topics": [
+    {
+      "topic": "Delivery partner rude",
+      "trend": "+25.3%"
+    },
+    {
+      "topic": "Feature request - faster delivery",
+      "trend": "+18.7%"
+    },
+    {
+      "topic": "Food arrived cold",
+      "trend": "+12.1%"
+    }
+  ],
+  "new_topics": [
+    "Feature request - faster delivery",
+    "Surge pricing complaints"
+  ]
+}
