@@ -1,6 +1,7 @@
-"""Quick start example for the Review Trend Analysis Agent.
+"""Quick start demonstration of the Review Trend Analysis System.
 
-This script demonstrates the basic usage of the system.
+Shows how to use the topic extraction and consolidation features
+with sample review data.
 """
 
 import sys
@@ -20,7 +21,7 @@ def demo_with_sample_reviews():
     """Demonstrate the system with sample reviews."""
 
     print("="*80)
-    print("REVIEW TREND ANALYSIS AGENT - QUICK START DEMO")
+    print("REVIEW TREND ANALYSIS SYSTEM - DEMO")
     print("="*80)
 
     # Sample reviews (simulating data from June 2024)
@@ -92,9 +93,9 @@ def demo_with_sample_reviews():
 
     print(f"\n📝 Processing {len(sample_reviews)} sample reviews...")
 
-    # Step 1: Extract topics using AI agent
+    # Step 1: Extract topics using NLP
     print("\n" + "-"*80)
-    print("STEP 1: Topic Extraction with AI Agent")
+    print("STEP 1: Topic Extraction")
     print("-"*80)
 
     extraction_agent = TopicExtractionAgent()
@@ -115,9 +116,9 @@ def demo_with_sample_reviews():
     for topic in unique_topics:
         print(f"  - {topic}")
 
-    # Step 2: Consolidate topics using AI agent
+    # Step 2: Consolidate topics
     print("\n" + "-"*80)
-    print("STEP 2: Topic Consolidation (Solving Duplication Problem)")
+    print("STEP 2: Topic Consolidation")
     print("-"*80)
 
     consolidation_agent = TopicConsolidationAgent()
@@ -173,8 +174,8 @@ def demo_with_sample_reviews():
     print("\n" + "="*80)
     print("✓ DEMO COMPLETED SUCCESSFULLY")
     print("="*80)
-    print("\nKey Achievements Demonstrated:")
-    print("  ✓ Agentic AI topic extraction (not traditional LDA/TopicBERT)")
+    print("\nKey Features Demonstrated:")
+    print("  ✓ Topic extraction using modern NLP")
     print("  ✓ Smart topic consolidation to prevent duplicates")
     print("  ✓ Daily batch processing")
     print("  ✓ Trend analysis over time")

@@ -225,7 +225,7 @@ def extract_topics(reviews):
 - **API Rate Limits**: OpenAI has rate limits
 - **Processing Time**: ~5-10 sec per batch of 10 reviews
 - **Memory**: Stores all data in memory during processing
-- **Cost**: ~$0.01 per 10 reviews with GPT-4
+- **Cost**: ~$0.01 per 10 reviews
 
 ### Scaling Strategies
 
