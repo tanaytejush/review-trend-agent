@@ -1,7 +1,7 @@
-"""Main application for Review Trend Analysis Agent.
+"""Main application for Review Trend Analysis System.
 
-This is the entry point for the agentic AI system that analyzes app store reviews
-and generates trend reports.
+Analyzes app store reviews and generates comprehensive trend reports
+to help product teams understand customer feedback patterns.
 """
 
 import argparse
@@ -64,13 +64,13 @@ def scrape_reviews(package_name: str, start_date: datetime, end_date: datetime):
 
 
 def process_batches(batch_dir: Path):
-    """Process daily batches with AI agents.
+    """Process daily review batches and extract topics.
 
     Args:
         batch_dir: Directory containing daily batch files
     """
     print("\n" + "="*80)
-    print("STEP 2: PROCESSING BATCHES WITH AI AGENTS")
+    print("STEP 2: PROCESSING BATCHES")
     print("="*80)
 
     # Find batch files
@@ -213,7 +213,7 @@ def main():
     target_date = args.target_date
 
     print("\n" + "="*80)
-    print("REVIEW TREND ANALYSIS AGENT")
+    print("REVIEW TREND ANALYSIS SYSTEM")
     print("="*80)
     print(f"Package: {args.package}")
     print(f"Date Range: {args.start_date} to {args.end_date}")

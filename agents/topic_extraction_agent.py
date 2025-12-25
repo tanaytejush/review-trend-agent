@@ -1,4 +1,4 @@
-"""Agentic AI system for extracting topics from reviews using LLMs."""
+"""Topic extraction module using natural language processing."""
 
 import json
 from typing import List, Dict, Optional
@@ -15,7 +15,7 @@ from config.config import (
 
 
 class TopicExtractionAgent:
-    """LLM-based agent for extracting topics from app reviews."""
+    """Extracts topics from app reviews using language models."""
 
     def __init__(self, model: str = TOPIC_EXTRACTION_MODEL):
         """Initialize the agent.

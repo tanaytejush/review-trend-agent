@@ -1,4 +1,4 @@
-"""Agentic AI system for consolidating and deduplicating similar topics."""
+"""Topic consolidation module for deduplicating similar topics."""
 
 import json
 from typing import List, Dict, Tuple
@@ -14,18 +14,18 @@ from config.config import (
 
 
 class TopicConsolidationAgent:
-    """LLM-based agent for consolidating similar topics into canonical forms.
+    """Consolidates similar topics into canonical forms using semantic analysis.
 
-    This agent solves the key challenge: similar but not identical topics being
-    created as different categories (e.g., "delivery guy rude" vs "delivery partner
-    impolite" vs "delivery person behaved badly").
+    Solves the topic fragmentation problem where similar feedback gets
+    categorized differently (e.g., "delivery guy rude", "delivery partner
+    impolite", "delivery person behaved badly" all represent the same issue).
     """
 
     def __init__(self, model: str = TOPIC_CONSOLIDATION_MODEL):
-        """Initialize the consolidation agent.
+        """Initialize the consolidation module.
 
         Args:
-            model: OpenAI model to use
+            model: Language model to use for consolidation
         """
         self.client = OpenAI(api_key=OPENAI_API_KEY)
         self.model = model
