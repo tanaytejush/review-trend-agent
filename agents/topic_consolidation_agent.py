@@ -1,4 +1,8 @@
-"""Topic consolidation module for deduplicating similar topics."""
+"""Topic consolidation - groups similar topics together.
+
+Solves the problem where "delivery guy rude" and "delivery partner impolite"
+get treated as separate topics when they're basically the same thing.
+"""
 
 import json
 from typing import List, Dict, Tuple

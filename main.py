@@ -1,7 +1,7 @@
 """Main application for Review Trend Analysis System.
 
-Analyzes app store reviews and generates comprehensive trend reports
-to help product teams understand customer feedback patterns.
+Runs the complete pipeline: scrape reviews, extract topics, consolidate,
+and generate trend reports.
 """
 
 import argparse

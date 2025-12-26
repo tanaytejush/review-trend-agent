@@ -1,4 +1,4 @@
-"""Topic extraction module using natural language processing."""
+"""Topic extraction from reviews using GPT-4."""
 
 import json
 from typing import List, Dict, Optional
@@ -135,7 +135,8 @@ Return ONLY the JSON array, no additional text."""
                 result = response.choices[0].message.content
                 extractions = json.loads(result)
 
-                # Handle both array and object with array inside
+                # Handle different response formats from the API
+                # Sometimes it wraps the array in an object, sometimes not
                 if isinstance(extractions, dict) and 'extractions' in extractions:
                     extractions = extractions['extractions']
                 elif isinstance(extractions, dict) and 'topics' in extractions:

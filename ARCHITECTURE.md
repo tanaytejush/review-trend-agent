@@ -2,75 +2,51 @@
 
 ## Overview
 
-This document outlines the technical architecture and design decisions for the Review Trend Analysis System.
+This doc explains how the system works and why I built it this way.
 
-## Core Design Principles
+## Core Design Decisions
 
-### 1. Modern NLP Approach
+### 1. Why LLMs Instead of Traditional Topic Modeling?
 
-**Decision**: Use advanced language models instead of traditional topic modeling (LDA, TopicBERT)
+I went with GPT-4 instead of LDA/TopicBERT for a few reasons:
 
-**Rationale**:
-- **Higher Accuracy**: Modern models understand context and semantics better
-- **Better Topic Quality**: Generates clear, actionable topic names
-- **Semantic Understanding**: Distinguishes between similar but different issues
-- **Dynamic Learning**: No training data required, works out of the box
-- **Explainable Results**: Provides reasoning for topic assignments
+**The Good**:
+- Way better accuracy (85-95% vs 60-70%)
+- Actually understands context, not just keywords
+- Gives you clear topic names like "Delivery partner rude" instead of "topic_7"
+- No training data needed - works immediately
+- Provides reasoning for why it tagged something a certain way
 
-**Trade-offs**:
-- API costs vs running local models
-- Depends on external service availability
-- Processing time longer than statistical methods
+**The Trade-offs**:
+- Costs money (API calls)
+- Depends on OpenAI being up
+- Slower than statistical methods
 
-### 2. Modular Architecture
+### 2. Keep It Modular
 
-The system uses specialized modules for different tasks:
+The system is split into separate modules that each do one thing:
 
 ```
-┌─────────────────────────────────────┐
-│     Topic Extraction Module          │
-│  (Identifies topics from reviews)    │
-└──────────────┬──────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────┐
-│   Topic Consolidation Module         │
-│  (Deduplicates similar topics)       │
-└──────────────┬──────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────┐
-│       Batch Processor                 │
-│  (Manages daily processing flow)     │
-└──────────────┬──────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────┐
-│      Report Generator                 │
-│   (Creates trend visualizations)     │
-└─────────────────────────────────────┘
+Reviews → Topic Extraction → Topic Consolidation → Batch Processor → Reports
 ```
 
-**Benefits**:
-- **Separation of Concerns**: Each module has a single responsibility
-- **Modularity**: Easy to test and modify components independently
-- **Scalability**: Can process operations in parallel
-- **Maintainability**: Clear boundaries and interfaces
+Why this way?
+- Each part does its own job
+- Easy to test pieces independently
+- Can swap out modules if needed
+- Clear flow from input to output
 
-### 3. Incremental Taxonomy Building
+### 3. Learning As It Goes
 
-**Decision**: Build topic taxonomy incrementally as new reviews are processed
+The system starts with a few seed topics (like "Delivery delay", "App crashes") and learns new ones as it processes reviews.
 
-**Implementation**:
-1. Start with seed topics (domain knowledge)
-2. Extract new topics from each batch
-3. Consolidate with existing taxonomy
-4. Update canonical mappings
+How it works:
+1. Start with seed topics
+2. Find new topics in reviews
+3. Merge similar ones with existing topics
+4. Keep the taxonomy updated
 
-**Benefits**:
-- Adapts to evolving user concerns
-- Discovers new issues automatically
-- Maintains consistent taxonomy over time
+This means the system adapts to new issues automatically - if users start complaining about a new feature, it'll pick that up.
 
 ## Key Challenge: Topic Deduplication
 
@@ -298,17 +274,17 @@ python main.py --package com.application.zomato
 - [ ] Predictive analytics (trend forecasting)
 - [ ] Integration with product management tools (Jira, Linear)
 
-## Comparison with Traditional Approaches
+## How This Compares to Traditional Methods
 
-| Aspect | Traditional (LDA/BERT) | Modern NLP (This System) |
-|--------|------------------------|--------------------------|
-| Setup Time | Weeks (training, tuning) | Hours (configuration) |
-| Accuracy | 60-70% | 85-95% |
-| Topic Quality | Generic, unclear | Specific, meaningful |
-| Deduplication | Manual rules | Automatic semantic |
-| Adaptability | Requires retraining | Immediate |
-| Cost | Infrastructure | API usage (~$1/1000 reviews) |
-| Explainability | Limited | Full reasoning |
+| What | Traditional (LDA/BERT) | This System (LLM-based) |
+|------|------------------------|-------------------------|
+| Setup | Weeks of training | Configure and go |
+| Accuracy | ~60-70% | ~85-95% |
+| Topics | "topic_7", "topic_14" | "Delivery delay", "App crashes" |
+| Deduplication | Write rules manually | Automatic |
+| Adapts to new issues | Need to retrain | Immediate |
+| Cost | Infrastructure + time | ~$1 per 1000 reviews |
+| Explainable | Not really | Yes, with reasoning |
 
 ## Security & Privacy
 
@@ -348,7 +324,3 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
----
-
-**Document Version**: 1.0
-**Last Updated**: 2024-12-25

@@ -1,114 +1,70 @@
-# Deployment Guide
+# Deployment
 
-## Quick Deployment
+## Quick Start
 
-### Using Docker (Recommended)
+### Docker (easiest)
 
-1. Build the image:
 ```bash
 docker build -t review-trend-agent .
+docker run -e OPENAI_API_KEY=your_key review-trend-agent --package com.application.zomato
 ```
 
-2. Run the container:
-```bash
-docker run -e OPENAI_API_KEY=your_key review-trend-agent \
-  --package com.application.zomato
-```
+### Manual Setup
 
-### Manual Deployment
-
-1. Set up Python environment:
 ```bash
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-2. Configure environment:
-```bash
 export OPENAI_API_KEY=your_key
-export APP_PACKAGE_NAME=com.application.zomato
-```
-
-3. Run the application:
-```bash
 python main.py
 ```
 
-## Production Deployment
+## For Production
 
-### Requirements
-
+### What You Need
 - Python 3.8+
-- 2GB RAM minimum
-- Disk space for review data storage
-- Internet connection for API access
+- At least 2GB RAM
+- Disk space for data
+- Internet connection
 
 ### Environment Variables
 
 Required:
-- `OPENAI_API_KEY`: Your OpenAI API key
+- `OPENAI_API_KEY`
 
-Optional:
-- `APP_PACKAGE_NAME`: Default app to analyze
-- `START_DATE`: Default start date (YYYY-MM-DD)
-- `TOPIC_EXTRACTION_MODEL`: Model for extraction
-- `TOPIC_CONSOLIDATION_MODEL`: Model for consolidation
-- `TEMPERATURE`: Model temperature (0.0-1.0)
-- `MAX_RETRIES`: Number of retry attempts
+Optional (see .env.example for more):
+- `APP_PACKAGE_NAME`
+- `START_DATE`
+- `TOPIC_EXTRACTION_MODEL`
+- `TEMPERATURE`
 
-### Scheduling
+### Running Daily (cron)
 
-Set up cron job for daily runs:
 ```bash
 # Run every day at 2 AM
 0 2 * * * cd /path/to/review-trend-agent && python main.py
 ```
 
 ### Monitoring
+- Check logs
+- Watch API usage in OpenAI dashboard
+- Review reports in `output/`
 
-- Check logs in standard output
-- Monitor API usage in OpenAI dashboard
-- Review generated reports in `output/` directory
+### If Things Go Wrong
 
-### Scaling
-
-For high volume:
-- Increase batch sizes
-- Use multiple workers
-- Implement request queuing
-- Cache results aggressively
-
-## Security
-
-- Store API keys securely (use secrets manager)
-- Restrict file system access
-- Enable rate limiting
-- Monitor for unusual patterns
-
-## Troubleshooting
-
-### High API Costs
-
-- Reduce batch frequency
+**High costs?**
 - Use caching
-- Optimize model selection
+- Switch to gpt-3.5-turbo
+- Process less frequently
 
-### Slow Performance
-
+**Running slow?**
 - Increase batch sizes
-- Use parallel processing
-- Check network latency
+- Check your internet connection
 
-### Out of Memory
-
+**Out of memory?**
 - Process smaller date ranges
-- Implement streaming
-- Increase system RAM
+- Add more RAM
 
-## Support
+## More Info
 
-For deployment issues, refer to:
-- README.md for basic setup
-- GETTING_STARTED.md for detailed instructions
-- ARCHITECTURE.md for system design
+See README.md for basics, ARCHITECTURE.md for how it works.
