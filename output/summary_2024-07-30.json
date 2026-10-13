@@ -1,0 +1,113 @@
+{
+  "total_topics": 16,
+  "total_mentions": 10363,
+  "top_topics": [
+    {
+      "topic": "Feature request - faster delivery",
+      "total_mentions": 1108
+    },
+    {
+      "topic": "Food arrived cold",
+      "total_mentions": 829
+    },
+    {
+      "topic": "Delivery partner rude",
+      "total_mentions": 813
+    },
+    {
+      "topic": "App crashes/freezing",
+      "total_mentions": 648
+    },
+    {
+      "topic": "Payment issues",
+      "total_mentions": 647
+    },
+    {
+      "topic": "Wrong order delivered",
+      "total_mentions": 632
+    },
+    {
+      "topic": "Customer service unresponsive",
+      "total_mentions": 627
+    },
+    {
+      "topic": "Delivery delay",
+      "total_mentions": 623
+    },
+    {
+      "topic": "Restaurant quality declined",
+      "total_mentions": 611
+    },
+    {
+      "topic": "Promo codes not working",
+      "total_mentions": 588
+    }
+  ],
+  "trending_topics": [
+    {
+      "topic": "Customer service unresponsive",
+      "trend": "+73.3%"
+    },
+    {
+      "topic": "Food portion reduced",
+      "trend": "+63.5%"
+    },
+    {
+      "topic": "Food quality poor/stale",
+      "trend": "+33.0%"
+    },
+    {
+      "topic": "Payment issues",
+      "trend": "+27.5%"
+    },
+    {
+      "topic": "High delivery charges",
+      "trend": "+19.1%"
+    },
+    {
+      "topic": "Order missing items",
+      "trend": "+4.4%"
+    },
+    {
+      "topic": "Delivery partner rude",
+      "trend": "+3.7%"
+    },
+    {
+      "topic": "Promo codes not working",
+      "trend": "-0.7%"
+    },
+    {
+      "topic": "Restaurant quality declined",
+      "trend": "-11.8%"
+    },
+    {
+      "topic": "App crashes/freezing",
+      "trend": "-13.0%"
+    },
+    {
+      "topic": "Surge pricing complaints",
+      "trend": "-18.1%"
+    },
+    {
+      "topic": "Wrong order delivered",
+      "trend": "-19.9%"
+    },
+    {
+      "topic": "Food arrived cold",
+      "trend": "-20.4%"
+    },
+    {
+      "topic": "Feature request - faster delivery",
+      "trend": "-21.6%"
+    },
+    {
+      "topic": "Delivery delay",
+      "trend": "-26.6%"
+    },
+    {
+      "topic": "Maps/navigation issues",
+      "trend": "-38.8%"
+    }
+  ],
+  "new_topics": []
+}
