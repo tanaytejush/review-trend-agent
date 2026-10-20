@@ -142,3 +142,8 @@ python -m unittest discover -s tests -v
 ## License
 
 See [LICENSE](LICENSE).
+
+
+---
+
+<sub>Made by [tanaytejush](https://github.com/tanaytejush)</sub>
